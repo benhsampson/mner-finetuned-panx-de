@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "mner-finetuned-panx-de"
+version = "0.1.0"
+description = ""
+authors = ["bhsampson <bensampsondev@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "mner_finetuned_panx_de" }]
+
+[tool.poetry.dependencies]
+python = "^3.9,<3.13"
+rich = "^13.5.3"
+pandas = "^2.1.1"
+datasets = "^2.14.5"
+transformers = {extras = ["torch"], version = "^4.33.3"}
+seqeval = "^1.2.2"
+huggingface-hub = "^0.17.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
